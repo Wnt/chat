@@ -4,7 +4,8 @@ import org.vaadin.chat.data.Message;
 
 public class ChatView extends ChatViewDesign {
 	public ChatView() {
-		nameField.setPlaceholder("John Doe");
+		nameField.setPlaceholder("Nickname");
+		msgField.setPlaceholder("Message");
 		nameField.setValueChangeTimeout(0);
 	}
 
