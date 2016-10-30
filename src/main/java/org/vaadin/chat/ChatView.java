@@ -18,7 +18,7 @@ public class ChatView extends ChatViewDesign {
 		messageRows.addComponent(msgRow);
 		panel.setScrollTop(Integer.MAX_VALUE);
 		
-		if (messageRows.getComponentCount() > ChatService.MAX_LOG_SIZE) {
+		while (messageRows.getComponentCount() > ChatService.MAX_LOG_SIZE) {
 			messageRows.removeComponent(messageRows.getComponent(0));
 		}
 	}

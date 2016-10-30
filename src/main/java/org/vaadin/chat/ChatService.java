@@ -27,11 +27,8 @@ public final class ChatService {
 		for (MessageListener l : listeners) {
 			l.messageReceived(m);
 		}
-		int overflow = messageLog.size() - MAX_LOG_SIZE;
-		if (overflow > 0) {
-			for (int i = 0; i < overflow; i++) {
-				messageLog.remove(0);
-			}
+		while (messageLog.size() > MAX_LOG_SIZE) {
+			messageLog.remove(0);
 		}
 	}
 
