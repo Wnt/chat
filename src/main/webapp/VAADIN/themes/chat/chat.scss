@@ -29,4 +29,15 @@ $v-panel-border: 2px solid v-shade;
   @include valo;
 
   // Insert your own theme rules here
+  .msg-row {
+    .name-label {
+      width: 85px !important;
+    }
+    .msg-label {
+      width: calc(100% - 85px) !important;
+    }
+    .even-row {
+      background-color: rgb(250, 250, 250);
+    }
+  }
 }

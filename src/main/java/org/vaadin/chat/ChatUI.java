@@ -9,7 +9,6 @@ import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.event.ShortcutAction.KeyCode;
 import com.vaadin.event.ShortcutListener;
-import com.vaadin.server.Page;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.shared.Registration;
@@ -25,7 +24,6 @@ public class ChatUI extends UI {
 
 	@Override
 	protected void init(VaadinRequest vaadinRequest) {
-		Page.getCurrent().setTitle("Chat");
 		chatView = new ChatView();
 		chatView.nameField.focus();
 
