@@ -1,18 +1,18 @@
 <!doctype html>
 <html>
  <head>
-  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;chat&quot;}">
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
   <meta charset="UTF-8" name="vaadin-version" content="7.7.0">
  </head> 
  <body> 
-  <vaadin-vertical-layout spacing size-full margin> 
-   <vaadin-panel size-full _id="panel" :expand> 
+  <vaadin-vertical-layout style-name="chat-view" spacing size-full margin> 
+   <vaadin-panel style-name="chat-panel" size-full _id="panel" :expand> 
     <vaadin-css-layout style-name="message-rows" width-full _id="messageRows"></vaadin-css-layout> 
    </vaadin-panel> 
-   <vaadin-horizontal-layout spacing width-full> 
-    <vaadin-text-field _id="nameField"></vaadin-text-field> 
-    <vaadin-text-field enabled="false" input-prompt="" width-full _id="msgField" :expand></vaadin-text-field> 
-    <vaadin-button enabled="false" plain-text _id="sendButton">
+   <vaadin-horizontal-layout style-name="input-layout" spacing width-full> 
+    <vaadin-text-field style-name="name-field" width="85px" _id="nameField"></vaadin-text-field> 
+    <vaadin-text-field enabled="false" input-prompt="" style-name="msg-field" width-full _id="msgField" :expand></vaadin-text-field> 
+    <vaadin-button enabled="false" style-name="send-button" plain-text _id="sendButton">
       Send 
     </vaadin-button> 
    </vaadin-horizontal-layout> 
